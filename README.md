@@ -1,0 +1,1 @@
+https://app.pluralsight.com/library/courses/practical-python-beginners/table-of-contents
