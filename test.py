@@ -1,3 +1,5 @@
+
+import sys
 # > function should be declared before usage in a file
 def build_decades(decades):
     if decades == 0:
@@ -10,22 +12,28 @@ def build_decades(decades):
 def build_years(decades, residual):
     if residual == 0:
         y = ''
+    elif decades == 0:
+        y = f' {residual} years'
     else:
-        if decades == 0:
-            y = f' {residual} years'
-            print(f'debug when less than 10 years, y = {y}')
-        else:
-            y = f' and {residual} years'
+        y = f' and {residual} years'
     return y
 
 
 # How many decades
-while True:
-    ageS = input('your age ?\n')
-    age = int(ageS)
+loop = 0
+while loop < 3:
+    age_str = input('your age ?\n')
+    try:
+        age = int(age_str)
+    except ValueError:
+        print("! Age should be an integer")
+        sys.exit("Error")
 
     dec = age // 10
     d = build_decades(dec)
     y = build_years(dec, age % 10)
 
     print(f'your age is {age}, that goes to {d} {y} ')
+    loop += 1
+
+print("end of program")
