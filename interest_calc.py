@@ -8,7 +8,7 @@
 
 loan = 50_000
 annual_rate = 3
-monthly = 1
+monthly = 1_000
 
 monthly_rate = 3/100/12
 owe = loan
