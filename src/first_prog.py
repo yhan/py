@@ -1,10 +1,10 @@
-
 import sys
+
+
 # > function should be declared before usage in a file
 def build_decades(decades):
-    if decades == 0:
-        d = ''
-    else:
+    d = ''
+    if decades != 0:
         d = f'{decades} decades'
     return d
 
