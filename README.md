@@ -11,3 +11,8 @@ https://www.infoworld.com/article/3239675/virtualenv-and-venv-python-virtual-env
 
 py -m venv venv-hello
 ```
+
+# Books
+1. Fluent Python
+   https://github.com/AllenDowney/fluent-python-notebooks.git
+

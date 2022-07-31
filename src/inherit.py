@@ -1,3 +1,5 @@
+# Inheritance: https://www.programiz.com/python-programming/multiple-inheritance
+
 class Polygon:
     def __init__(self, no_of_sides):
         self.n = no_of_sides

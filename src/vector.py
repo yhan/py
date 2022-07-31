@@ -9,7 +9,7 @@ class Vector:
     def __repr__(self):
         return 'Vector(%r, %r)' % (self.x, self.y)
 
-    def __abs__(self):
+    def abs(self):
         return hypot(self.x, self.y)
 
     def __bool__(self):
@@ -38,16 +38,20 @@ v2 = Vector(2, 1)
 mul = v1 * v2
 print(mul)
 
-# derived class
-class MultiVector(Vector):
-    def __mul__(self, other):
-        x  = self.x * other.x
-        y = self.y * other.y
-        return MultiVector(x, y)
+print(f'hypot of {v1} = {v1.abs()}')
+# print(f'hypot of {v1} = {abs(v1)}')
 
-a = MultiVector(5,6)
-b = MultiVector(7,8)
 
-ab = a * b
-print(ab)
+# # derived class
+# class MultiVector(Vector):
+#     def __mul__(self, other):
+#         x  = self.x * other.x
+#         y = self.y * other.y
+#         return MultiVector(x, y)
+#
+# a = MultiVector(5,6)
+# b = MultiVector(7,8)
+#
+# ab = a * b
+# print(ab)
 
